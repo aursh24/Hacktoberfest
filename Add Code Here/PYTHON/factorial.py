@@ -1,6 +1,6 @@
 def factorial(n):
     if n < 0:
-        return 0
+        raise ValueError("Factorials is not defined for Negative Integers")
     if n == 0:
         return 1
     else:
@@ -12,4 +12,6 @@ def main():
     print(total)
 
 if __name__ == "__main__":
-    main()
+    main() 
+
+
